@@ -1,0 +1,45 @@
+{
+  "name": "mysql-agent",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "data": "tsx initdb/importAppUv.ts",
+    "dev": "tsx src/index.ts",
+    "server": "npx @langchain/langgraph-cli dev",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "test": "tsx src/test.ts"
+  },
+  "dependencies": {
+    "@langchain/community": "^1.0.0-alpha.1",
+    "@langchain/core": "^1.0.0-alpha.5",
+    "@langchain/langgraph": "^1.0.0-alpha.4",
+    "@langchain/openai": "^1.0.0-alpha.3",
+    "langchain": "^1.0.0-alpha.6",
+    "canvas": "^3.2.0",
+    "chartjs": "^0.3.24",
+    "chartjs-node-canvas": "^5.0.0",
+    "csv-parser": "^3.2.0",
+    "danfojs": "^1.2.0",
+    "dotenv": "^17.2.2",
+    "mysql2": "^3.15.2",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.44.1",
+    "@typescript-eslint/parser": "^8.44.1",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.1"
+  }
+}
